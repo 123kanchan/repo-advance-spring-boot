@@ -11,6 +11,8 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @Entity
 @Table(name="comments")
+    //onetomany is parent nd manytonone child
+    //@join column that parent class ka konsa column se join hora
 public class Comment {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
