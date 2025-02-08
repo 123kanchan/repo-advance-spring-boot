@@ -12,6 +12,13 @@ import java.util.List;
 @AllArgsConstructor
 @Entity
 @Table(name="category")
+
+    ///1 category has many post @onetomany mapped by=category measns in post table category column will come  and captegory table become parent now
+    //CATGORY
+    //ID NAME DES
+    //POST
+    //NAME POSTID CATEGORYID
+    //SO if removing anything from category table from post also remove thats why casxade-ALL
 public class Category {
     @Id
     @GeneratedValue(strategy= GenerationType.IDENTITY)
